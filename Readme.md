@@ -1,10 +1,10 @@
-# Doubly Linked List in Scala 3
+# Double Linked List in Scala 3
 
 ## Overview
 
-This project implements a **Doubly Linked List** data structure in **Scala 3** from scratch, without using built-in collection implementations.
+This project implements a **Double Linked List** data structure in **Scala 3** from scratch, without using built-in collection implementations.
 
-A doubly linked list is a dynamic data structure where each node stores:
+A double linked list is a dynamic data structure where each node stores:
 
 * a value
 * a reference to the **next node**
@@ -76,11 +76,11 @@ project-root
 └─ src
    ├─ main
    │   └─ scala
-   │       └─ DoublyLinkedList.scala
+   │       └─ DoubleLinkedList.scala
    │
    └─ test
        └─ scala
-           └─ DoublyLinkedListTest.scala
+           └─ DoubleLinkedListTest.scala
 ```
 
 ---
@@ -129,27 +129,27 @@ src/test/scala
 # Example Usage
 
 ```scala
-val list = new DoublyLinkedList[Int]
+val list = new DoubleLinkedList[Int]
 
 list.addFirst(2)
 list.addFirst(1)
 list.addLast(3)
 
-println(list)      // [1, 2, 3]
+println(list) // [1, 2, 3]
 
 list.insert(1, 99)
 
-println(list)      // [1, 99, 2, 3]
+println(list) // [1, 99, 2, 3]
 
 list.remove(2)
 
-println(list)      // [1, 99, 3]
+println(list) // [1, 99, 3]
 ```
 
 ---
 
-## Doubly Linked List Operations
+## double Linked List Operations
 
-Example of insertion and removal in a doubly linked list:
+Example of insertion and removal in a double linked list:
 
-![Doubly Linked List Animation](docs/doubly_linked_list_insert_remove.gif)
+![double Linked List Animation](docs/double_linked_list_insert_remove.gif)

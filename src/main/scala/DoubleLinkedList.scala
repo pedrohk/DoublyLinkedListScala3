@@ -1,4 +1,4 @@
-class DoublyLinkedList[A] {
+class DoubleLinkedList[A] {
 
   private class Node(var value: A) {
     var prev: Node | Null = null

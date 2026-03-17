@@ -1,15 +1,15 @@
 import org.scalatest.funsuite.AnyFunSuite
 
-class DoublyLinkedListTest extends AnyFunSuite {
+class DoubleLinkedListTest extends AnyFunSuite {
 
   test("new list should be empty") {
-    val list = new DoublyLinkedList[Int]()
+    val list = new DoubleLinkedList[Int]()
     assert(list.isEmpty)
     assert(list.size == 0)
   }
 
   test("addFirst should insert at beginning") {
-    val list = new DoublyLinkedList[Int]()
+    val list = new DoubleLinkedList[Int]()
 
     list.addFirst(2)
     list.addFirst(1)
@@ -20,7 +20,7 @@ class DoublyLinkedListTest extends AnyFunSuite {
   }
 
   test("addLast should insert at end") {
-    val list = new DoublyLinkedList[Int]()
+    val list = new DoubleLinkedList[Int]()
 
     list.addLast(1)
     list.addLast(2)
@@ -31,7 +31,7 @@ class DoublyLinkedListTest extends AnyFunSuite {
   }
 
   test("get should return correct value") {
-    val list = new DoublyLinkedList[Int]()
+    val list = new DoubleLinkedList[Int]()
 
     list.addLast(10)
     list.addLast(20)
@@ -43,7 +43,7 @@ class DoublyLinkedListTest extends AnyFunSuite {
   }
 
   test("set should update value") {
-    val list = new DoublyLinkedList[Int]()
+    val list = new DoubleLinkedList[Int]()
 
     list.addLast(1)
     list.addLast(2)
@@ -54,7 +54,7 @@ class DoublyLinkedListTest extends AnyFunSuite {
   }
 
   test("insert should add element in middle") {
-    val list = new DoublyLinkedList[Int]()
+    val list = new DoubleLinkedList[Int]()
 
     list.addLast(1)
     list.addLast(3)
@@ -68,7 +68,7 @@ class DoublyLinkedListTest extends AnyFunSuite {
   }
 
   test("removeFirst should remove first element") {
-    val list = new DoublyLinkedList[Int]()
+    val list = new DoubleLinkedList[Int]()
 
     list.addLast(1)
     list.addLast(2)
@@ -81,7 +81,7 @@ class DoublyLinkedListTest extends AnyFunSuite {
   }
 
   test("removeLast should remove last element") {
-    val list = new DoublyLinkedList[Int]()
+    val list = new DoubleLinkedList[Int]()
 
     list.addLast(1)
     list.addLast(2)
@@ -93,7 +93,7 @@ class DoublyLinkedListTest extends AnyFunSuite {
   }
 
   test("remove should remove element by index") {
-    val list = new DoublyLinkedList[Int]()
+    val list = new DoubleLinkedList[Int]()
 
     list.addLast(1)
     list.addLast(2)
@@ -107,7 +107,7 @@ class DoublyLinkedListTest extends AnyFunSuite {
   }
 
   test("contains should detect element") {
-    val list = new DoublyLinkedList[Int]()
+    val list = new DoubleLinkedList[Int]()
 
     list.addLast(5)
     list.addLast(10)
@@ -117,7 +117,7 @@ class DoublyLinkedListTest extends AnyFunSuite {
   }
 
   test("indexOf should return correct index") {
-    val list = new DoublyLinkedList[Int]()
+    val list = new DoubleLinkedList[Int]()
 
     list.addLast(7)
     list.addLast(8)
@@ -128,7 +128,7 @@ class DoublyLinkedListTest extends AnyFunSuite {
   }
 
   test("clear should remove all elements") {
-    val list = new DoublyLinkedList[Int]()
+    val list = new DoubleLinkedList[Int]()
 
     list.addLast(1)
     list.addLast(2)
@@ -140,7 +140,7 @@ class DoublyLinkedListTest extends AnyFunSuite {
   }
 
   test("iterator should iterate through list") {
-    val list = new DoublyLinkedList[Int]()
+    val list = new DoubleLinkedList[Int]()
 
     list.addLast(1)
     list.addLast(2)
@@ -157,7 +157,7 @@ class DoublyLinkedListTest extends AnyFunSuite {
   }
 
   test("toString should format list correctly") {
-    val list = new DoublyLinkedList[Int]()
+    val list = new DoubleLinkedList[Int]()
 
     list.addLast(1)
     list.addLast(2)
