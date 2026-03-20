@@ -46,8 +46,8 @@
 # Slide 6 — Conclusion
 
 > In summary, the Doubly Linked List is a dynamic and very flexible data structure.
-> It is ideal when we need to frequently modify elements or move in both directions through the data.
-> However, it is not the best choice when we need fast access by index.
-> Understanding these trade-offs helps us choose the correct data structure for each problem.
+Scala does not provide a built-in doubly linked list in its standard library.
+Most collections are either immutable or optimized for different use cases, like List or Vector.
+Because of that, if we need a real doubly linked structure with prev and next pointers, we usually implement it manually.
 
 ---
